@@ -49,38 +49,38 @@
 - 설정 메모리 256byte
 
 ## R_Type
-<img src="./이미지/diagram_R-type.jpg"><img>
+<img src="./image/diagram_R-type.jpg"><img>
 - **rd = rs1 ?? rs2**
 
 
 ## L_Type
-<img src="./이미지/diagram_L-type.jpg"><img>
+<img src="./image/diagram_L-type.jpg"><img>
 - **rd = M[rs1+imm]**
 
 ## I_Type
-<img src="./이미지/diagram_I-type.jpg"><img>
+<img src="./image/diagram_I-type.jpg"><img>
 - **rd = rs1 ?? imm**
 
 ## S_Type
-<img src="./이미지/diagram_S-type.jpg"><img>
+<img src="./image/diagram_S-type.jpg"><img>
 - **M[rs1+imm] = rs2**
 
 ## B_Type
-<img src="./이미지/diagram_B-type.jpg"><img>
+<img src="./image/diagram_B-type.jpg"><img>
 - **if(rs1 == rs2) PC += imm**
 
 ## LU_Type
-<img src="./이미지/diagram_LU-type.jpg"><img>
+<img src="./image/diagram_LU-type.jpg"><img>
 - **rd = imm << 12**
 
 ## AU_Type
-<img src="./이미지/diagram_AU-type.jpg"><img>
+<img src="./image/diagram_AU-type.jpg"><img>
 - **rd = PC + (imm << 12)**
 
 ## J_Type
-<img src="./이미지/diagram_J-type.jpg"><img>
+<img src="./image/diagram_J-type.jpg"><img>
 - **rd = PC + 4, PC += imm**
 
 ## JL_Type
-<img src="./이미지/diagram_JL-type.jpg"><img>
+<img src="./image/diagram_JL-type.jpg"><img>
 - **rd = PC + 4, PC = rs1 + imm**
