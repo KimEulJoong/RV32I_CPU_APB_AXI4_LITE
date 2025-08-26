@@ -34,18 +34,8 @@
 
 ---
 
-## 동작 과정
-1. `main` 48byte frame
-   ```asm
-   addi sp, sp, -48 : 프레임 생성
-   ```
-2. `sort` 48byte frame
-3. `swap` 48byte frame
-   ```asm
-   addi sp, sp, 48 : 프레임 해제
-   ```
 ## RAM
-- 필요 메모리 48 + 48 + 48 + $\alpha$
+- 필요 메모리 48(main) + 48(sort) + 48(swap) + $\alpha$
 - 설정 메모리 256byte
 
 ## R_Type
@@ -84,3 +74,14 @@
 ## JL_Type
 <img src="./image/diagram_JL-type.jpg"><img>
 - **rd = PC + 4, PC = rs1 + imm**
+
+## 동작 과정 : Test Program (C, Bubble Sort)
+1. `main` 48byte frame
+   ```asm
+   addi sp, sp, -48 : 프레임 생성
+   ```
+2. `sort` 48byte frame
+3. `swap` 48byte frame
+   ```asm
+   addi sp, sp, 48 : 프레임 해제
+   ```
