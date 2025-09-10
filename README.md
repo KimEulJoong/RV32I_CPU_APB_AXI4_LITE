@@ -1,5 +1,3 @@
-**study 폴더에 APB와 AXI4_Lite관련 내용이 있습니다.**
-
 # RISC-V RV32I CPU 설계
 
 ## 개요
